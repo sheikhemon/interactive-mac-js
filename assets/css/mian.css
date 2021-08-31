@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table {
+    width: 300px;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}

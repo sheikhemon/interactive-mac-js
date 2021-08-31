@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Author -->
+    <meta name="description" content="Emon Sheikh">
+    <!-- Tailwind link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom Css Link -->
+    <link rel="stylesheet" href="assets/css/mian.css">
+    <!-- Title -->
+    <title>Interactive-Mac-Book</title>
+</head>
+<body>
+    <!------------------------------------------------------
+                    Main Area Start
+    -------------------------------------------------------->
+    <main class="h-screen">
+        <section class="container mx-auto p-20 bg-red-50">
+            <div class="grid grid-cols-2">
+                <!------------------------------------------------------
+                        Mac-Book-Image Section Start
+                -------------------------------------------------------->
+                <div class="pt-28">
+                    <div class="animate-pulse">
+                        <img class="w" src="assets/images/mak-book.png" alt="Mac-Book-Image">
+                    </div>
+                </div>
+                <!------------------------------------------------------
+                        Mac-Book-Image Section End
+                -------------------------------------------------------->
+                <!------------------------------------------------------
+                        Mac-Book-Content Section Start
+                ------------------------------------------------------->
+                <div class="">
+                        <!-- Mac-Book Description -->
+                    <div class="mb-5">
+                        <h1 class="text-4xl font-bold text-black mb-5">Customize your Blue 24-inch iMac with <span class="text-purple-900">Apple M1 chip</span></h1>
+                        <p class="text-base font-sans text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde ducimus libero distinctio quasi sunt maiores eius non iure, ab quis. Alias nihil veritatis assumenda!</p>
+                    </div>
+                    <!-- Memory -->
+                    <div class="mb-5">
+                        <h4 class="mb-2 text-purple-900 font-bold">Memory</h4>
+                        <button id="low-memory" class="py-2 text-black bg-white mr-1 border rounded transition delay-75 px-4 hover:shadow-lg hover:bg-black hover:text-white focus:ring-2 focus:ring-blue-600 font-semibold">8GB unified memory</button>
+                        <button id="max-memory" class="py-2 text-black bg-white mr-1 border rounded transition delay-75 px-4 hover:shadow-lg
+                        hover:shadow-lg hover:bg-black hover:text-white focus:ring-2 focus:ring-blue-600 font-semibold">16GB unified memory</button>
+                    </div>
+                    <!-- Storage -->
+                    <div class="mb-5">
+                        <h4 class="mb-2 text-purple-900 font-bold">Storage</h4>
+                        <button id="low-storage" class="py-2 text-black bg-white mr-1 border rounded transition delay-75 px-4 hover:shadow-lg
+                        hover:shadow-lg hover:bg-black hover:text-white focus:ring-2 focus:ring-blue-600 font-semibold">265GB SSD Storage</button>
+                        <button id="mid-storage" class="py-2 text-black bg-white mr-1 border rounded transition delay-75 px-4 hover:shadow-lg
+                        hover:shadow-lg hover:bg-black hover:text-white focus:ring-2 focus:ring-blue-600 font-semibold">512GB SSD Storage</button>
+                        <button id="max-storage" class="py-2 text-black bg-white mr-1 border rounded transition delay-75 px-4 hover:shadow-lg
+                        hover:shadow-lg hover:bg-black hover:text-white focus:ring-2 focus:ring-blue-600 font-semibold">1TB SSD Storage</button>
+                    </div>
+                    <!-- Choose Your Delivery Option -->
+                    <div class="mb-5">
+                        <h4 class="mb-2 text-purple-900 font-bold">Choose Your Delivery Option</h4>
+                        <button id="delivery-free" class="py-2 text-black bg-white mr-1 border rounded transition delay-75 px-4 hover:shadow-lg
+                        hover:shadow-lg hover:bg-black hover:text-white focus:ring-2 focus:ring-blue-600 font-semibold">Friday Aug 25 FREE Prime Delivery</button>
+                        <button id="with-delivery" class="py-2 text-black bg-white mr-1 border rounded transition delay-75 px-4 hover:shadow-lg
+                        hover:shadow-lg hover:bg-black hover:text-white focus:ring-2 focus:ring-blue-600 font-semibold">Friday Aug 21 Delivery Charge $20</button>
+                    </div>
+                    <!-- Costing Area -->
+                    <div class="mb-5">
+                        <h4 class="text-purple-900 font-bold">Average Cost</h4>
+                        <table class="mt-2">
+                            <tr class="font-bold border-b-2 border-fuchsia-600  border-b-2 border-fuchsia-600 ">
+                                <td>Best Price</td>
+                                <td>$<span id="best-price">1299</span></td>
+                            </tr>
+                            <tr class="font-bold border-b-2 border-fuchsia-600 ">
+                                <td>Extra Memory Cost</td>
+                                <td>$<span id="memory-cost">0</span></td>
+                            </tr>
+                            <tr class="font-bold border-b-2 border-fuchsia-600 ">
+                                <td>Extra Storage Cost</td>
+                                <td>$<span id="storage-cost">0</span></td>
+                            </tr>
+                            <tr class="font-bold border-b-2 border-black ">
+                                <td>Delivery Charge</td>
+                                <td>$<span id="delivery-cost">0</span></td>
+                            </tr>
+                            <tr class="font-bold border-b-2 border-fuchsia-600">
+                                <td>Total Price</td>
+                                <td>$<span id="total-cost">1299</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Promo Code Area -->
+                    <div class="mb-5">
+                        <h4 class="mb-2 text-purple-900 font-bold">Add Promo Code</h4>
+                        <input type="text" name="" id="promo-input" class="border focus:ring-2 focus:ring-blue-200 h-8">
+                        <button class="bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 text-white px-5 py-1 font-bold" id="promo-btn">Apply</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Total Cost -->
+            <hr class= "max-w-3xl mx-auto">
+            <div class="text-center pt-10 font-bold text-3xl">
+                <h2 class="text-blue-400">Total: $<span id="avg-total">1299</span></h2>
+            </div>
+        </section>
+        <!------------------------------------------------------
+                    Mac-Book-Content Section End
+        -------------------------------------------------------->
+    </main>
+    <!------------------------------------------------------
+                        Main Area End
+    -------------------------------------------------------->
+
+    <!-- Custom JavaScript Link -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
